@@ -49,7 +49,7 @@ class AncientMagicStuff extends BasicWeapon implements Weapon {
 
             }
             lst.remove(2);
-            lst.remove(4);
+            lst.remove(5);
             int v[] = new int[x.length];
             int c = lst.size() - 1;
             while(c>0){

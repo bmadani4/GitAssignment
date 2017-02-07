@@ -28,7 +28,6 @@ class TheChosenOneAxe extends BasicWeapon implements Weapon {
     public static int getDamage(){
         int damage = 0;
         Path file = FileSystems.getDefault().getPath("/Users/bmadani4/Desktop/GitAssignment/conf", "thechosenone.txt");
-        //String fileName = "conf/thechosenone.txt";
         try (InputStream in = Files.newInputStream(file);
              BufferedReader reader =
                      new BufferedReader(new InputStreamReader(in))) {
@@ -41,12 +40,9 @@ class TheChosenOneAxe extends BasicWeapon implements Weapon {
                 i++;
             }
             String ar[] = new String[2];
-            //System.out.println(array[0] + " " + array[1]);
             for(int j = 0; j < array.length;j++){
-                //System.out.println(j + "\n");
                 if(array[0].equals(array[1])){
                     if((array[j].equals(array[0])) == false){
-                       // System.out.println("HERE : " + array[j] + "\n");
                         damage = j + 1;
                         break;
                     }
